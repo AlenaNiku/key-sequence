@@ -7,6 +7,16 @@
 </head>
 <body>
 <script>
+// create an empty array to push all the letters into later
+const pressed = []
+const secretCode = 'wesbos'
+
+window.addEventListener('keyup', (e) => {
+  console.log(e.key)
+  pressed.push(e.key)
+  console.log(pressed)
+})
+
 </script>
 </body>
 </html>
