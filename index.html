@@ -7,10 +7,13 @@
 </head>
 <body>
 <script>
+// Get the key sequencing detection, store them in array and then check every time if the key up matches what you're looking for
+
 // create an empty array to push all the letters into later
 const pressed = []
 const secretCode = 'wesbos'
 
+// add an event listener to the window
 window.addEventListener('keyup', (e) => {
   console.log(e.key)
   pressed.push(e.key)
